@@ -1,0 +1,53 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Path to the single Figma Tokens Studio file
+const single_token = '{{tokensPath}}/tokens.json';
+
+// Directory where the split files will be saved
+const multi_token_path = '{{tokensPath}}/multi';
+
+// Load the Figma Tokens Studio file
+const tokens = JSON.parse(fs.readFileSync(single_token, 'utf8'));
+
+// Extract metadata and themes
+const metadata = tokens.$metadata || {};
+const themes = tokens.$themes || [];
+
+// Remove metadata and themes from tokens to process other sections
+delete tokens.$metadata;
+delete tokens.$themes;
+
+// Helper function to create directories if they don't exist
+const ensureDirectoryExistence = (filePath) => {
+  const dirName = path.dirname(filePath);
+  if (!fs.existsSync(dirName)) {
+    fs.mkdirSync(dirName, { recursive: true });
+  }
+};
+
+// Helper function to write tokens to files dynamically based on tokenSet
+const writeTokensToFile = (filePath, tokenData) => {
+  ensureDirectoryExistence(filePath);
+  fs.writeFileSync(filePath, JSON.stringify(tokenData, null, 2), 'utf8');
+    console.log(`✔︎ ${filePath}`);
+};
+
+// Write metadata and themes to separate JSON files
+writeTokensToFile(path.join(multi_token_path, '$metadata.json'), metadata);
+writeTokensToFile(path.join(multi_token_path, '$themes.json'), themes);
+
+if (metadata.tokenSetOrder) {
+  metadata.tokenSetOrder.forEach((tokenSet) => {
+    if (tokens[tokenSet]) {
+      if (tokenSet.includes('/')) {
+        const [folder, file] = tokenSet.split('/');
+        const dynamicPath = path.join(multi_token_path, folder, `${file}.json`);
+        writeTokensToFile(dynamicPath, tokens[tokenSet]);
+      } else {
+        const dynamicPath = path.join(multi_token_path, `${tokenSet}.json`);
+        writeTokensToFile(dynamicPath, tokens[tokenSet]);
+      }
+    }
+  });
+}

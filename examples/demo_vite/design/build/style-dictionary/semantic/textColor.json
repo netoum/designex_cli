@@ -1,0 +1,21 @@
+[
+  {
+    "value": "#000000",
+    "type": "color",
+    "filePath": "design/tokens/multi/semantic.json",
+    "isSource": true,
+    "original": {
+      "value": "{colors.black}",
+      "type": "color"
+    },
+    "name": "text-color-body",
+    "attributes": {
+      "category": "textColor",
+      "type": "body"
+    },
+    "path": [
+      "textColor",
+      "body"
+    ]
+  }
+]

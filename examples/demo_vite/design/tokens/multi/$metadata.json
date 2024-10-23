@@ -1,0 +1,7 @@
+{
+  "tokenSetOrder": [
+    "global",
+    "semantic",
+    "component/button"
+  ]
+}

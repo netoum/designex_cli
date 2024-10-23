@@ -1,0 +1,21 @@
+[
+  {
+    "value": "#ffffff",
+    "type": "color",
+    "filePath": "design/tokens/multi/semantic.json",
+    "isSource": true,
+    "original": {
+      "value": "{colors.white}",
+      "type": "color"
+    },
+    "name": "background-color-body",
+    "attributes": {
+      "category": "backgroundColor",
+      "type": "body"
+    },
+    "path": [
+      "backgroundColor",
+      "body"
+    ]
+  }
+]

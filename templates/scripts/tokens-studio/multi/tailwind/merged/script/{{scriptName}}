@@ -1,0 +1,49 @@
+import { register as registerTokenStudio } from '@tokens-studio/sd-transforms';
+import { makeSdTailwindConfig } from 'sd-tailwindcss-transformer'
+import StyleDictionary from 'style-dictionary';
+
+const types = ['colors', 'textColor', 'backgroundColor', 'spacing', 'width', 'borderRadius', 'borderWidth', 'boxShadow', 'spacing', 'screens'];
+
+registerTokenStudio(StyleDictionary, {
+  excludeParentKeys: false,
+  platform: "css",
+  'ts/color/modifiers': {
+    format: 'hex',
+  }
+});
+
+await Promise.all(
+  types.map((type) => {
+
+    const Tailwind = new StyleDictionary(
+      makeSdTailwindConfig({
+        type,
+        preprocessors: ['tokens-studio'],
+        isVariables: false,
+        source: ['{{tokensPath}}/multi/**/*.json'],
+      })
+    )
+    Tailwind.platforms[`tailwind/${type}`] = {
+      transformGroup: 'tokens-studio',
+      transforms: ['attribute/cti', 'name/kebab'],
+      buildPath: `{{buildPath}}/merged/`,
+      files: [
+        {
+          destination: `${type}.js`,
+          format: 'tailwindFormat',
+          filter: async (token, options) => {
+            return token.path[0] == type;
+          },
+        }
+      ]
+    }
+    Tailwind['log'] = {
+      warnings: 'warn', // 'warn' | 'error' | 'disabled'
+      verbosity: 'default', // 'default' | 'silent' | 'verbose'
+      errors: {
+        brokenReferences: 'throw', // 'throw' | 'console'
+      }
+    }
+    return Tailwind.buildAllPlatforms()
+  }),
+);

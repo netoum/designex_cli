@@ -1,0 +1,17 @@
+{
+    "scriptPath": "designex/scripts",
+    "scriptName": "build.js",
+  
+    "prescriptPath": "designex/scripts",
+    "prescriptName": "transform.js",
+  
+    "tokensPath": "designex/tokens",
+  
+    "buildPath": "designex/build",
+  
+    "inputFormat": "tokens-studio",
+    "inputType": "multi",
+  
+    "outputFormat": "tailwind",
+    "outputType": "unmerged"
+}

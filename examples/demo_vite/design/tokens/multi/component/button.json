@@ -1,0 +1,26 @@
+{
+  "backgroundColor": {
+    "button": {
+      "DEFAULT": {
+        "value": "{colors.brand.DEFAULT}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{colors.brand.tint}",
+        "type": "color"
+      }
+    }
+  },
+  "textColor": {
+    "button": {
+      "DEFAULT": {
+        "value": "{colors.brand.shade}",
+        "type": "color"
+      },
+      "hover": {
+        "value": "{colors.brand.DEFAULT}",
+        "type": "color"
+      }
+    }
+  }
+}

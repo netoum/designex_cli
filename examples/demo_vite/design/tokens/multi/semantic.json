@@ -1,0 +1,30 @@
+{
+  "colors": {
+    "brand": {
+      "DEFAULT": {
+        "value": "{colors.orange.500}",
+        "type": "color"
+      },
+      "tint": {
+        "value": "{colors.orange.200}",
+        "type": "color"
+      },
+      "shade": {
+        "value": "{colors.orange.800}",
+        "type": "color"
+      }
+    }
+  },
+  "backgroundColor": {
+    "body": {
+      "value": "{colors.white}",
+      "type": "color"
+    }
+  },
+  "textColor": {
+    "body": {
+      "value": "{colors.black}",
+      "type": "color"
+    }
+  }
+}

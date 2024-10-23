@@ -1,0 +1,44 @@
+[
+  {
+    "value": "#f97316",
+    "type": "color",
+    "filePath": "design/tokens/multi/component/button.json",
+    "isSource": true,
+    "original": {
+      "value": "{colors.brand.DEFAULT}",
+      "type": "color"
+    },
+    "name": "background-color-button-default",
+    "attributes": {
+      "category": "backgroundColor",
+      "type": "button",
+      "item": "DEFAULT"
+    },
+    "path": [
+      "backgroundColor",
+      "button",
+      "DEFAULT"
+    ]
+  },
+  {
+    "value": "#fed7aa",
+    "type": "color",
+    "filePath": "design/tokens/multi/component/button.json",
+    "isSource": true,
+    "original": {
+      "value": "{colors.brand.tint}",
+      "type": "color"
+    },
+    "name": "background-color-button-hover",
+    "attributes": {
+      "category": "backgroundColor",
+      "type": "button",
+      "item": "hover"
+    },
+    "path": [
+      "backgroundColor",
+      "button",
+      "hover"
+    ]
+  }
+]

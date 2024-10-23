@@ -1,0 +1,7 @@
+{
+  "tokenSetOrder": [
+    "tailwind",
+    "corex",
+    "corex_component/button"
+  ]
+}
