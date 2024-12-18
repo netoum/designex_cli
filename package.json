@@ -16,11 +16,6 @@
     "sd-tailwindcss-transformer": "^2.0.0",
     "style-dictionary": "^4.1.3"
   },
-  "peerDependencies": {
-    "@tokens-studio/sd-transforms": "^1.2.5",
-    "sd-tailwindcss-transformer": "^2.0.0",
-    "style-dictionary": "^4.1.3"
-  },
   "devDependencies": {
     "@oclif/prettier-config": "^0.2.1",
     "@oclif/test": "^4",

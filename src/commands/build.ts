@@ -88,7 +88,7 @@ export default class Build extends Command {
           }
 
         })
-        .on('error', (error) => {
+        .on('error', (error : any) => {
           this.error(`Watcher error: ${error.message}`);
         });
 
