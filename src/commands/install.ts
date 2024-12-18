@@ -36,13 +36,13 @@ export default class Install extends Command {
       options: ['merged', 'unmerged'],
     }),
     prescriptName: Flags.file({
-      default: 'transform.js',
+      default: 'transform.mjs',
     }),
     prescriptPath: Flags.directory({
       default: 'designex/scripts',
     }),
     scriptName: Flags.file({
-      default: 'build.js',
+      default: 'build.mjs',
     }),
     scriptPath: Flags.directory({
       default: 'designex/scripts',

@@ -1,6 +1,4 @@
-// import { Hook } from '@oclif/core';
 import type { Hook } from '@oclif/core';
-
 import { promises as fs } from 'node:fs';
 import * as path from 'node:path';
 

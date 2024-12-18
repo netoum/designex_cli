@@ -6,6 +6,10 @@ import {
 	writeFileSync,
 } from 'node:fs'
 import path from 'node:path'
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const tokenRegex = /{{|}}/
 const maxstache = (str: string, ctx: Record<string, string> = {}) => {
@@ -67,12 +71,13 @@ function removeUnderscore(filepath: string) {
 
 export const copyTokens = (flags: Record<string, string>): string[] => {
 	const tokensTemplate = path.join(
-	  'templates',
+	   __dirname,
+	  '../../templates',
 	  'tokens',
 	  flags.inputFormat,
 	  flags.inputType
 	);
-	const tokensDir = path.join(process.cwd(), flags.tokensPath);
+	const tokensDir = path.join(flags.tokensPath);
   
 	const tokensVariables = {
 	  buildPath: flags.buildPath,
@@ -85,15 +90,16 @@ export const copyTokens = (flags: Record<string, string>): string[] => {
   
   export const copyScript = (flags: Record<string, string>): string[] => {
 	const scriptsTemplate = path.join(
-	  'templates',
-	  'scripts',
+		__dirname,
+		'../../templates',
+		'scripts',
 	  flags.inputFormat,
 	  flags.inputType,
 	  flags.outputFormat,
 	  flags.outputType,
 	  'script'
 	);
-	const scriptsDir = path.join(process.cwd(), flags.scriptPath);
+	const scriptsDir = path.join(flags.scriptPath);
   
 	const scriptsVariables = {
 	  buildPath: flags.buildPath,
@@ -106,15 +112,16 @@ export const copyTokens = (flags: Record<string, string>): string[] => {
   
   export const copyPrescript = (flags: Record<string, string>): string[] => {
 	const prescriptsTemplate = path.join(
-	  'templates',
-	  'scripts',
+		__dirname,
+		'../../templates',
+		'scripts',
 	  flags.inputFormat,
 	  flags.inputType,
 	  flags.outputFormat,
 	  flags.outputType,
 	  'prescript'
 	);
-	const prescriptsDir = path.join(process.cwd(), flags.prescriptPath);
+	const prescriptsDir = path.join(flags.prescriptPath);
   
 	const prescriptsVariables = {
 	  prescriptName: flags.prescriptName,

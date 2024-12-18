@@ -20,7 +20,7 @@ $ npm install -g designex
 $ designex COMMAND
 running command...
 $ designex (--version)
-designex/0.0.0 linux-x64 node-v20.18.0
+designex/0.0.0 linux-x64 node-v22.9.0
 $ designex --help [COMMAND]
 USAGE
   $ designex COMMAND
@@ -91,7 +91,7 @@ DESCRIPTION
   Display help for designex.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.16/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.19/src/commands/help.ts)_
 
 ## `designex install`
 
@@ -115,9 +115,9 @@ FLAGS
                            <options: tailwind|css>
   --outputType=<option>    [default: unmerged]
                            <options: merged|unmerged>
-  --prescriptName=<value>  [default: transform.js]
+  --prescriptName=<value>  [default: transform.mjs]
   --prescriptPath=<value>  [default: designex/scripts]
-  --scriptName=<value>     [default: build.js]
+  --scriptName=<value>     [default: build.mjs]
   --scriptPath=<value>     [default: designex/scripts]
   --template=<option>      [default: designex] Tokens template to use
                            <options: designex|corex|shadcn>

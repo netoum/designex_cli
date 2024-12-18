@@ -1,5 +1,0 @@
-{
-    "scripts": {
-        "build": "design/scripts/build.js"
-    }
-}
