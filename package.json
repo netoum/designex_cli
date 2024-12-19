@@ -22,7 +22,6 @@
     "@types/chai": "^4",
     "@types/mocha": "^10",
     "@types/node": "^18",
-    "@yao-pkg/pkg": "^6.1.1",
     "chai": "^4",
     "eslint": "^8",
     "eslint-config-oclif": "^5",
@@ -73,16 +72,5 @@
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
   },
-  "types": "dist/index.d.ts",
-  "pkg": {
-    "ignore": [
-      "node_modules/xdg-open"
-    ],
-    "targets": [
-      "node22-linux-x64",
-      "node22-linux-arm64",
-      "node22-win-x64"
-    ],
-    "outputPath": "standalone"
-  }
+  "types": "dist/index.d.ts"
 }

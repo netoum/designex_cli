@@ -14,9 +14,9 @@ export default class Install extends Command {
     buildPath: Flags.directory({
       default: 'designex/build',
     }),
-    config: Flags.string({ default: 'designex.flags.json', description: 'config file to use' }),
+    config: Flags.string({ default: 'designex.config.json', description: 'config file to use' }),
     inputFormat: Flags.string({
-      default: 'style-dictionary',
+      default: 'tokens-studio',
       multiple: false,
       options: ['style-dictionary', 'tokens-studio'],
     }),
@@ -36,13 +36,13 @@ export default class Install extends Command {
       options: ['merged', 'unmerged'],
     }),
     prescriptName: Flags.file({
-      default: 'transform.mjs',
+      default: 'transform.js',
     }),
     prescriptPath: Flags.directory({
       default: 'designex/scripts',
     }),
     scriptName: Flags.file({
-      default: 'build.mjs',
+      default: 'build.js',
     }),
     scriptPath: Flags.directory({
       default: 'designex/scripts',

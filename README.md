@@ -46,8 +46,8 @@ USAGE
 
 FLAGS
   --buildPath=<value>      [default: designex/build]
-  --config=<value>         [default: designex.flags.json] config file to use
-  --inputFormat=<option>   [default: style-dictionary]
+  --config=<value>         [default: designex.config.json] config file to use
+  --inputFormat=<option>   [default: tokens-studio]
                            <options: style-dictionary|tokens-studio>
   --inputType=<option>     [default: single]
                            <options: single|multi>
@@ -106,8 +106,8 @@ USAGE
 
 FLAGS
   --buildPath=<value>      [default: designex/build]
-  --config=<value>         [default: designex.flags.json] config file to use
-  --inputFormat=<option>   [default: style-dictionary]
+  --config=<value>         [default: designex.config.json] config file to use
+  --inputFormat=<option>   [default: tokens-studio]
                            <options: style-dictionary|tokens-studio>
   --inputType=<option>     [default: single]
                            <options: single|multi>
@@ -115,9 +115,9 @@ FLAGS
                            <options: tailwind|css>
   --outputType=<option>    [default: unmerged]
                            <options: merged|unmerged>
-  --prescriptName=<value>  [default: transform.mjs]
+  --prescriptName=<value>  [default: transform.js]
   --prescriptPath=<value>  [default: designex/scripts]
-  --scriptName=<value>     [default: build.mjs]
+  --scriptName=<value>     [default: build.js]
   --scriptPath=<value>     [default: designex/scripts]
   --template=<option>      [default: designex] Tokens template to use
                            <options: designex|corex|shadcn>
