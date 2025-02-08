@@ -33,7 +33,7 @@ $ npm install -g @netoum/designex
 $ designex COMMAND
 running command...
 $ designex (--version)
-@netoum/designex/1.0.1 linux-x64 node-v22.9.0
+@netoum/designex/1.0.0 linux-x64 node-v22.9.0
 $ designex --help [COMMAND]
 USAGE
   $ designex COMMAND
@@ -75,7 +75,7 @@ EXAMPLES
   $ designex build
 ```
 
-_See code: [src/commands/build.ts](https://github.com/netoum/designex_cli/blob/v1.0.1/src/commands/build.ts)_
+_See code: [src/commands/build.ts](https://github.com/netoum/designex_cli/blob/v1.0.0/src/commands/build.ts)_
 
 ## `designex help [COMMAND]`
 
@@ -138,7 +138,7 @@ EXAMPLES
    setup
 ```
 
-_See code: [src/commands/setup.ts](https://github.com/netoum/designex_cli/blob/v1.0.1/src/commands/setup.ts)_
+_See code: [src/commands/setup.ts](https://github.com/netoum/designex_cli/blob/v1.0.0/src/commands/setup.ts)_
 <!-- commandsstop -->
 
 
