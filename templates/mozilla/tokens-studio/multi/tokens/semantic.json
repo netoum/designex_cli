@@ -1,0 +1,75 @@
+{
+  "sizing": {
+    "checkbox": {
+      "value": "{sizing.7}",
+      "type": "sizing",
+      "description": "Sizing Checkbox"
+    },
+    "avatar": {
+      "value": "{sizing.20}",
+      "type": "sizing",
+      "description": "Sizing Avatar"
+    },
+    "social": {
+      "value": "{sizing.18}",
+      "type": "sizing",
+      "description": "Sizing Social"
+    },
+    "icon": {
+      "small": {
+        "value": "{sizing.9}",
+        "type": "sizing",
+        "description": "Sizing Icon Small"
+      },
+      "base": {
+        "value": "{sizing.12}",
+        "type": "sizing",
+        "description": "Sizing Icon Base"
+      },
+      "large": {
+        "value": "{sizing.14}",
+        "type": "sizing",
+        "description": "Sizing Icon Large"
+      },
+      "xlarge": {
+        "value": "{sizing.32}",
+        "type": "sizing",
+        "description": "Sizing Icon xLarge"
+      }
+    }
+  },
+  "color": {
+    "text": {
+      "default": {
+        "value": "{color.black}",
+        "type": "color",
+        "description": "Color Text Default"
+      },
+      "link": {
+        "value": "{color.blue.80}",
+        "type": "color",
+        "description": "Color Text Link"
+      },
+      "active": {
+        "value": "{color.blue.40}",
+        "type": "color",
+        "description": "Color Text Active"
+      },
+      "disabled": {
+        "value": "{color.gray.40}",
+        "type": "color",
+        "description": "Color Text Disabled"
+      },
+      "required": {
+        "value": "{color.red.40}",
+        "type": "color",
+        "description": "Color Text Required"
+      },
+      "success": {
+        "value": "{color.green.60}",
+        "type": "color",
+        "description": "Color Text Success"
+      }
+    }
+  }
+}

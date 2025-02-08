@@ -1,0 +1,40 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --colors-background: hsl(0 0% 100%);
+  --colors-foreground: hsl(240 10% 3.9%);
+  --colors-card-default: hsl(0 0% 100%);
+  --colors-card-foreground: hsl(240 10% 3.9%);
+  --colors-popover-default: hsl(0 0% 100%);
+  --colors-popover-foreground: hsl(240 10% 3.9%);
+  --colors-primary-default: hsl(240 5.9% 10%);
+  --colors-primary-foreground: hsl(0 0% 98%);
+  --colors-secondary-default: hsl(240 4.8% 95.9%);
+  --colors-secondary-foreground: hsl(240 5.9% 10%);
+  --colors-muted-default: hsl(240 4.8% 95.9%);
+  --colors-muted-foreground: hsl(240 3.8% 46.1%);
+  --colors-accent-default: hsl(240 4.8% 95.9%);
+  --colors-accent-foreground: hsl(240 5.9% 10%);
+  --colors-destructive-default: hsl(0 72.22% 50.59%);
+  --colors-destructive-foreground: hsl(0 0% 98%);
+  --colors-border: hsl(240 5.9% 90%);
+  --colors-input: hsl(240 5.9% 90%);
+  --colors-ring: hsl(240 5% 64.9%);
+  --colors-sidebar-default: hsl(0 0% 98%);
+  --colors-sidebar-foreground: hsl(240 5.3% 26.1%);
+  --colors-sidebar-primary: hsl(240 5.9% 10%);
+  --colors-sidebar-primary-foreground: hsl(0 0% 98%);
+  --colors-sidebar-accent: hsl(240 4.8% 95.9%);
+  --colors-sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --colors-sidebar-border: hsl(220 13% 91%);
+  --colors-sidebar-ring: hsl(240 5% 64.9%);
+  --radius: 0.5rem;
+  --border-radius-xl: calc(0.5rem + 4px);
+  --border-radius-lg: 0.5rem;
+  --border-radius-md: calc(0.5rem - 2px);
+  --border-radius-sm: calc(0.5rem - 4px);
+  --font-family-sans: 'Geist Sans', 'system-ui', 'ui-sans-serif', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-mono: 'Geist Mono',  'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace';
+}

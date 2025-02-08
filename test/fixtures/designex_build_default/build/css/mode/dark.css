@@ -1,0 +1,33 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+.dark {
+  --colors-background: hsl(240 10% 3.9%);
+  --colors-foreground: hsl(0 0% 98%);
+  --colors-card-default: hsl(240 10% 3.9%);
+  --colors-card-foreground: hsl(0 0% 98%);
+  --colors-popover-default: hsl(240 10% 3.9%);
+  --colors-popover-foreground: hsl(0 0% 98%);
+  --colors-primary-default: hsl(0 0% 98%);
+  --colors-primary-foreground: hsl(240 5.9% 10%);
+  --colors-secondary-default: hsl(240 3.7% 15.9%);
+  --colors-secondary-foreground: hsl(0 0% 98%);
+  --colors-muted-default: hsl(240 3.7% 15.9%);
+  --colors-muted-foreground: hsl(240 5% 64.9%);
+  --colors-accent-default: hsl(240 3.7% 15.9%);
+  --colors-accent-foreground: hsl(0 0% 98%);
+  --colors-destructive-default: hsl(0 62.8% 30.6%);
+  --colors-destructive-foreground: hsl(0 85.7% 97.3%);
+  --colors-border: hsl(240 3.7% 15.9%);
+  --colors-input: hsl(240 3.7% 15.9%);
+  --colors-ring: hsl(240 4.9% 83.9%);
+  --colors-sidebar-default: hsl(240 5.9% 10%);
+  --colors-sidebar-foreground: hsl(240 4.8% 95.9%);
+  --colors-sidebar-primary: hsl(224.3 76.3% 48%);
+  --colors-sidebar-primary-foreground: hsl(0 0% 100%);
+  --colors-sidebar-accent: hsl(240 3.7% 15.9%);
+  --colors-sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --colors-sidebar-border: hsl(240 3.7% 15.9%);
+  --colors-sidebar-ring: hsl(240 4.9% 83.9%);
+}

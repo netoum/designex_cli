@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/commands/build.ts","./src/commands/setup.ts","./src/hooks/preparse/config.ts","./src/utils/copy-folder.ts","./src/utils/run-script.ts"],"version":"5.7.3"}

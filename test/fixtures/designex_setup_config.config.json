@@ -1,0 +1,10 @@
+{
+  "setup": {
+    "template": "shadcn/tokens-studio/multi"
+  },
+  "build": {
+    "dir": "test/fixtures/designex_build_default",
+    "script": "build_custom.mjs",
+    "tokens": "tokens"
+  }
+}

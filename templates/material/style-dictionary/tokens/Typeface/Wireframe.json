@@ -1,0 +1,24 @@
+{
+  "Brand": {
+    "value": "'Flow Circular'",
+    "type": "text"
+  },
+  "Plain": {
+    "value": "'Flow Circular'",
+    "type": "text"
+  },
+  "Weight": {
+    "Regular": {
+      "value": "Regular",
+      "type": "text"
+    },
+    "Medium": {
+      "value": "Regular",
+      "type": "text"
+    },
+    "Bold": {
+      "value": "Regular",
+      "type": "text"
+    }
+  }
+}

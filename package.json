@@ -1,0 +1,78 @@
+{
+  "name": "@netoum/designex",
+  "description": "Get easily started with design tokens using Designex CLI. Features a wide range of templates, pre-built configurations, and live reloading for seamless design system integration.",
+  "version": "1.0.0",
+  "author": "karimsemmoud",
+  "bin": {
+    "designex": "./bin/run.js"
+  },
+  "bugs": "https://github.com/netoum/designex_cli/issues",
+  "dependencies": {
+    "@oclif/core": "^4",
+    "@oclif/plugin-help": "^6",
+    "@oclif/plugin-plugins": "^5",
+    "chokidar": "^4.0.1"
+  },
+  "devDependencies": {
+    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/test": "^4",
+    "@types/chai": "^4",
+    "@types/mocha": "^10",
+    "@types/node": "^18",
+    "chai": "^4",
+    "eslint": "^8",
+    "eslint-config-oclif": "^5",
+    "eslint-config-oclif-typescript": "^3",
+    "eslint-config-prettier": "^9",
+    "mocha": "^10",
+    "oclif": "^4",
+    "parcel": "^2.13.3",
+    "shx": "^0.3.3",
+    "ts-node": "^10",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "@tokens-studio/sd-transforms": "^1.2.9",
+    "sd-tailwindcss-transformer": "^2.1.0",
+    "style-dictionary": "^4.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "/bin",
+    "/dist",
+    "/oclif.manifest.json",
+    "/templates"
+  ],
+  "homepage": "https://github.com/netoum/designex_cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "type": "module",
+  "oclif": {
+    "bin": "designex",
+    "dirname": "designex",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help"
+    ],
+    "hooks": {
+      "preparse": "./dist/hooks/preparse/config"
+    }
+  },
+  "repository": "netoum/designex_cli",
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts --fix",
+    "pack": "oclif pack tarballs --no-xz",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "npm run lint",
+    "prepack": "oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "types": "dist/index.d.ts"
+}

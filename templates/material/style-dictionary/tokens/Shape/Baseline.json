@@ -1,0 +1,32 @@
+{
+  "Corner": {
+    "None": {
+      "value": "0rem",
+      "type": "dimension"
+    },
+    "Extra-small": {
+      "value": "0.25rem",
+      "type": "dimension"
+    },
+    "Small": {
+      "value": "0.5rem",
+      "type": "dimension"
+    },
+    "Medium": {
+      "value": "0.75rem",
+      "type": "dimension"
+    },
+    "Large": {
+      "value": "1rem",
+      "type": "dimension"
+    },
+    "Extra-large": {
+      "value": "1.75rem",
+      "type": "dimension"
+    },
+    "Full": {
+      "value": "62.5rem",
+      "type": "dimension"
+    }
+  }
+}

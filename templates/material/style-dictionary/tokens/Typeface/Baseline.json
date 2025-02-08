@@ -1,0 +1,24 @@
+{
+  "Brand": {
+    "value": "Roboto",
+    "type": "text"
+  },
+  "Plain": {
+    "value": "Roboto",
+    "type": "text"
+  },
+  "Weight": {
+    "Regular": {
+      "value": "Regular",
+      "type": "text"
+    },
+    "Medium": {
+      "value": "Medium",
+      "type": "text"
+    },
+    "Bold": {
+      "value": "SemiBold",
+      "type": "text"
+    }
+  }
+}
