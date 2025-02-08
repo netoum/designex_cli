@@ -1,7 +1,7 @@
 {
   "name": "@netoum/designex",
   "description": "Get easily started with design tokens using Designex CLI. Features a wide range of templates, pre-built configurations, and live reloading for seamless design system integration.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "karimsemmoud",
   "bin": {
     "designex": "./bin/run.js"
