@@ -21,6 +21,21 @@ Depending on the template selected it will use the following dependencies:
 
 You can choose any another version by adding the packages into your own package.json file under "dependencies". Some scripts from the templates may not work properly with some other versions
 
+## Installation
+
+```bash
+npm install -D @netoum/designex
+
+```
+
+## Quick Start
+
+```bash
+npx designex setup --template=tailwind/v4/style-dictionary
+
+npx designex build
+```
+
 <!-- toc -->
 * [Designex](#designex)
 * [Usage](#usage)
@@ -29,12 +44,12 @@ You can choose any another version by adding the packages into your own package.
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @netoum/designex
-$ designex COMMAND
+$ npm install -D @netoum/designex
+$ npx designex COMMAND
 running command...
-$ designex (--version)
+$ npx designex --version
 @netoum/designex/1.0.2 linux-x64 node-v22.9.0
-$ designex --help [COMMAND]
+$ npx designex --help [COMMAND]
 USAGE
   $ designex COMMAND
 ...
@@ -42,9 +57,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`designex build`](#designex-build)
-* [`designex help [COMMAND]`](#designex-help-command)
-* [`designex setup`](#designex-setup)
+* [`npx designex build`](#designex-build)
+* [`npx designex help [COMMAND]`](#designex-help-command)
+* [`npx designex setup`](#designex-setup)
 
 ## `designex build`
 
@@ -52,7 +67,7 @@ Build and Watch your design tokens from the configured script into the configure
 
 ```
 USAGE
-  $ designex build [--config <value>] [--dir <value>] [--script <value>] [--tokens <value>] [--tokensMulti
+  $ npx designex build [--config <value>] [--dir <value>] [--script <value>] [--tokens <value>] [--tokensMulti
     <value>] [--watch]
 
 FLAGS
@@ -72,7 +87,7 @@ DESCRIPTION
   scripts it is created the desired export format (js, css ...)
 
 EXAMPLES
-  $ designex build
+  $ npx designex build
 ```
 
 _See code: [src/commands/build.ts](https://github.com/netoum/designex_cli/blob/v1.0.2/src/commands/build.ts)_
@@ -83,7 +98,7 @@ Display help for designex.
 
 ```
 USAGE
-  $ designex help [COMMAND...] [-n]
+  $ npx designex help [COMMAND...] [-n]
 
 ARGUMENTS
   COMMAND...  Command to show help for.
@@ -103,7 +118,7 @@ Setup your design tokens from a selection of Designex templates. It will create 
 
 ```
 USAGE
-  $ designex setup [--clean] [--config <value>] [--dir <value>] [--skipPreparse] [--template
+  $ npx designex setup [--clean] [--config <value>] [--dir <value>] [--skipPreparse] [--template
     shadcn/tokens-studio/single|shadcn/tokens-studio/multi|shadcn/style-dictionary|tailwind/v4/style-dictionary|tailwind
     /v4/tokens-studio/single|tailwind/v4/tokens-studio/multi|tailwind/v3/tokens-studio/single|tailwind/v3/tokens-studio/
     multi|mozilla/tokens-studio/single|mozilla/tokens-studio/multi|material/tokens-studio/single|material/tokens-studio/
