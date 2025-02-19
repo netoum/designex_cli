@@ -1,7 +1,7 @@
 Designex
-[![Version](https://img.shields.io/npm/v/designex.svg)](https://npmjs.org/package/@netoum/designex)
+[![Version](https://img.shields.io/npm/v/designex.svg)](https://npmjs.com/package/@netoum/designex)
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Downloads/week](https://img.shields.io/npm/dw/designex.svg)](https://npmjs.org/package/@netoum/designex)
+[![Downloads/week](https://img.shields.io/npm/dw/designex.svg)](https://npmjs.com/package/@netoum/designex)
 =================
 
 # Designex
